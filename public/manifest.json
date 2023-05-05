@@ -1,0 +1,8 @@
+{
+  "short_name": "Relay Status Calculator",
+  "name": "Calculate relay statuses from code",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#2f353b"
+}
