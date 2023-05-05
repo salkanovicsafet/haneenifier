@@ -53,6 +53,11 @@ export default function App() {
         }
       }
     }
+    if (
+      inputs.text1.toLowerCase() == 'haneen' &&
+      inputs.text2.toLowerCase() == 'slay queen'
+    )
+      editedText = '<span class="green">slay queen</span>';
     setConvertedInputs({ ...convertedInputs, text2: editedText });
   }
 
