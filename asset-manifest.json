@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/haneenifier/static/css/main.45e811a2.css",
+    "main.js": "/haneenifier/static/js/main.cc64c740.js",
+    "index.html": "/haneenifier/index.html",
+    "main.45e811a2.css.map": "/haneenifier/static/css/main.45e811a2.css.map",
+    "main.cc64c740.js.map": "/haneenifier/static/js/main.cc64c740.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45e811a2.css",
+    "static/js/main.cc64c740.js"
+  ]
+}
