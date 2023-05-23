@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/haneenifier/static/css/main.9ce2ae00.css",
-    "main.js": "/haneenifier/static/js/main.c9905bf4.js",
+    "main.css": "/haneenifier/static/css/main.899d2bed.css",
+    "main.js": "/haneenifier/static/js/main.10e3a80c.js",
+    "static/media/slay.mp3": "/haneenifier/static/media/slay.d66d883601b3bed82bdc.mp3",
     "index.html": "/haneenifier/index.html",
-    "main.9ce2ae00.css.map": "/haneenifier/static/css/main.9ce2ae00.css.map",
-    "main.c9905bf4.js.map": "/haneenifier/static/js/main.c9905bf4.js.map"
+    "main.899d2bed.css.map": "/haneenifier/static/css/main.899d2bed.css.map",
+    "main.10e3a80c.js.map": "/haneenifier/static/js/main.10e3a80c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ce2ae00.css",
-    "static/js/main.c9905bf4.js"
+    "static/css/main.899d2bed.css",
+    "static/js/main.10e3a80c.js"
   ]
 }
