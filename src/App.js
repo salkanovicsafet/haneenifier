@@ -11,6 +11,7 @@ export default function App() {
     text2: "",
   });
   const [checkingMode, setCheckingMode] = useState(false);
+  const [showSlay, setShowSlay] = useState(false);
 
   function handleChange(e) {
     setInputs({
@@ -61,8 +62,20 @@ export default function App() {
     setConvertedInputs({ ...convertedInputs, text2: editedText });
   }
 
+  function toggleSlay() {
+    setShowSlay(true);
+    setTimeout(() => {
+      setShowSlay(false);
+    }, 3000);
+  }
+
   return (
     <div className="main">
+      {showSlay && (
+        <div className="slay-container">
+          <span className="slay-flash">SLAY</span>
+        </div>
+      )}
       <h1>THE HANEENIFIER</h1>
       <div className="inputs">
         <textarea
@@ -75,9 +88,15 @@ export default function App() {
         <div className={`${!checkingMode && "hidden"} checked-text`}>
           <pre>{convertedInputs.text1}</pre>
         </div>
-        <button className="btn" onClick={check}>
-          {checkingMode ? "EDIT" : "CHECK"}
-        </button>
+        <div className="buttons">
+          <button className="btn" onClick={check}>
+            {checkingMode ? "EDIT" : "CHECK"}
+          </button>
+          <button className="btn slay-btn" onClick={toggleSlay}>
+            SLAY
+          </button>
+        </div>
+
         <textarea
           name="text2"
           value={inputs.text2}

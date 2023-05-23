@@ -63,15 +63,33 @@ h1 {
   display: none;
 }
 
+.buttons {
+  display: grid;
+  align-items: end;
+}
+
 .btn {
   height: 4rem;
   width: 8rem;
-  align-self: center;
   background-color: rgb(251, 248, 248);
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.slay-btn {
+  width: 6rem;
+  height: 3rem;
+  justify-self: center;
+  background-color: #fff;
+  border: 1.5px dotted #f53789;
+  border-radius: 3rem;
+  -webkit-animation: wiggle 0.5s ease-in-out infinite;
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+.slay-btn:hover {
 }
 
 .red {
@@ -92,4 +110,65 @@ pre {
   white-space: -pre-wrap; /* Opera 4-6 */
   white-space: -o-pre-wrap; /* Opera 7 */
   word-wrap: break-word;
+}
+
+.slay-container {
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  width: 97%;
+  height: 97%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe8f283;
+}
+
+.slay-flash {
+  font-size: 20rem;
+  -webkit-animation: blinker 0.5s linear infinite;
+  animation: blinker 0.5s linear infinite;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
 }
