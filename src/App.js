@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./assets/styles/App.css";
+import slay from "./slay.mp3";
 
 export default function App() {
   const [inputs, setInputs] = useState({
@@ -12,6 +13,8 @@ export default function App() {
   });
   const [checkingMode, setCheckingMode] = useState(false);
   const [showSlay, setShowSlay] = useState(false);
+  const audio = new Audio(slay);
+  audio.loop = true;
 
   function handleChange(e) {
     setInputs({
@@ -64,9 +67,12 @@ export default function App() {
 
   function toggleSlay() {
     setShowSlay(true);
+    audio.volume = 0.1;
+    audio.loop = false;
+    audio.play();
     setTimeout(() => {
       setShowSlay(false);
-    }, 3000);
+    }, 1500);
   }
 
   return (
